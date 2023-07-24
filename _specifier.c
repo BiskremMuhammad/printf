@@ -41,6 +41,9 @@ int specifier(const char *format, va_list args, int count)
 		case 'X':
 			count = _hex(va_arg(args, unsigned int), count, (*format == 'X') ? 1 : 0);
 			break;
+		case 'p':
+			printed = printf_pointer(args, count);
+			break;
 		default:
 			break;
 	}

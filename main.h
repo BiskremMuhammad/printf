@@ -14,4 +14,5 @@ int printf_binary(unsigned int num, int count);
 int printf_unsigned(unsigned int num, int count);
 int printf_octal(unsigned int num, int count);
 int _hex(unsigned int num, int count, int uppercase);
+int printf_pointer(va_list args, int count);
 #endif
