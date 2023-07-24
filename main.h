@@ -11,4 +11,7 @@ int specifier(const char *format, va_list args, int count);
 int printf_string(va_list args, int count);
 int printf_integer(va_list args, int count);
 int printf_binary(unsigned int num, int count);
+int printf_unsigned(unsigned int num, int count);
+int printf_octal(unsigned int num, int count);
+int _hex(unsigned int num, int count, int uppercase);
 #endif
