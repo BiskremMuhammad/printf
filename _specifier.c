@@ -28,6 +28,9 @@ int specifier(const char *format, va_list args, int count)
 		case 'i':
 			count = printf_integer(args, count);
 			break;
+		case 'b':
+			count = printf_binary(va_arg(args, unsigned int), count);
+			break;
 		default:
 			break;
 	}
