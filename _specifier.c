@@ -23,6 +23,11 @@ int specifier(const char *format, va_list args, int count)
 			_putchar('%');
 			count++;
 			break;
+
+		case 'd':
+		case 'i':
+			count = printf_integer(args, count);
+			break;
 		default:
 			break;
 	}
