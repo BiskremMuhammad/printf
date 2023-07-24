@@ -17,7 +17,7 @@ int specifier(const char *format, va_list args, int count)
 			count++;
 			break;
 		case 's':
-			count = printf_string(args, printed);
+			count = printf_string(args, count);
 			break;
 		case '%':
 			_putchar('%');
